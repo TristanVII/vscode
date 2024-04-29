@@ -1,0 +1,250 @@
+{
+  "editor.fontFamily": "Caskaydia Nerd Font, firacode, fira code",
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "cmake.configureOnOpen": true,
+  "window.menuBarVisibility": "toggle",
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "zenMode.hideLineNumbers": false,
+  "npm.keybindingsChangedWarningShown": true,
+  "editor.cursorWidth": 8,
+  "editor.stickyScroll.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.renderWhitespace": "none",
+  "editor.semanticTokenColorCustomizations": {},
+  "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#ffffffbb",
+        "terminalCursor.foreground": "#ffffffbb",
+        "editorUnnecessaryCode.border": "#ffffff50"
+  //   "list.inactiveSelectionBackground": "#313339",
+  //   "editor.background": "#313339",
+  //   "sideBarSectionHeader.background": "#313339",
+  //   "editorLineNumber.foreground": "#716868",
+  //   "sideBar.background": "#313339",
+  //   "statusBar.background": "#313339",
+  //   "badge.background": "#313339",
+  //   "scrollbarSlider.activeBackground": "#313339",
+  //   "sideBarSectionHeader.foreground": "#313339",
+  //   "sideBar.border": "#313339",
+  //   "editorGutter.background": "#313339",
+  //   "editor.lineHighlightBackground": "#b8b8b824",
+  //   "editor.lineHighlightBorder": "#b8b8b824",
+  //   "editor.selectionBackground": "#b8b8b824",
+  //   "activityBar.background": "#313339",
+  //   "editorGroupHeader.tabsBackground": "#313339",
+  //   "tab.activeBackground": "#716868",
+  //   "tab.inactiveBackground": "#313339"
+  },
+    "editor.tokenColorCustomizations": {
+    },
+    
+
+  "nxConsole.showNodeVersionOnStartup": false,
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 8,
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<Space>",
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Movement
+
+
+
+    {
+      "before": ["<C-l>"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["^"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-d>"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-u>"]
+    },
+    {
+      "before": ["<S-j>"],
+      "after": ["}"]
+    },
+    {
+      "before": ["<S-k>"],
+      "after": ["{"]
+    },
+    {
+      "before": ["<S-l>"],
+      "after": ["e"]
+    },
+    {
+      "before": ["<S-h>"],
+      "after": ["b"]
+    },
+
+    // change k for o , o for space
+    {
+      "before": ["o"],
+      "after": ["k"]
+    },
+    {
+      "before": ["<Enter>"],
+      "after": ["o"]
+    },
+    // Panes/windows
+    {
+      "before": ["S-Tab"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["Tab"],
+      "commands": [":bnext"]
+    },
+    {
+      "before": ["leader", "x"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "p"], "commands": ["workbench.action.quickOpen"] },
+    {
+      "before": ["C-q"],
+      "commands": ["editor.find.seedSearchStringFromSelection"]
+    },
+    {
+      "before": ["F"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["editor.action.errorHoverForeground"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    { "before": ["g", "k"], "commands": ["editor.action.goToImplementation"] },
+    { "before": ["<C-f>"], "commands": ["editor.action.find"] },
+    {
+      "before": ["<c-a>"],
+      "after": ["g", "g", "V", "G"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.mark.next"]
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.mark.prev"]
+    },
+      {
+    "before" : ["<leader>","t"],
+    "commands" : [
+      "workbench.view.explorer"
+    ]
+  }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["h"],
+      "after": ["h"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["$"]
+    },
+    {
+      "before": ["<C-h>"],
+      "after": ["^"]
+    },
+    {
+      "before": ["<S-j>"],
+      "after": ["}"]
+    },
+    {
+      "before": ["<S-k>"],
+      "after": ["{"]
+    },
+    {
+      "before": ["<S-l>"],
+      "after": ["e"]
+    },
+    {
+      "before": ["<S-h>"],
+      "after": ["b"]
+    },
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["<C-j>"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["<C-k>"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["gc"], "commands": ["editor.action.commentLine"] }
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.fontSize": 20,
+  "editor.defaultFormatter": "ms-python.autopep8",
+  "terminal.external.osxExec": "iTerm.app",
+  "markdown-preview-enhanced.enablePreviewZenMode": true,
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdown-preview-enhanced.codeBlockTheme": "xonokai.css",
+  "markdown-preview-enhanced.revealjsTheme": "blood.css",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "window.zoomLevel": -2,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.env.osx": {
+    "CW_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+
+}
+
